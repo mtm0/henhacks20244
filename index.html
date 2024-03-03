@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduWeb</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Concert+One&family=Gluten:wght@100..900&family=Signika+Negative:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<div class="tab-container">
+    <button class="tablink" onclick="langName('Home', this, 'rgb(243, 122, 122)')" id="defaultOpen"> HOME </button>
+    <button class="tablink" onclick="langName('Organizations', this, 'rgb(51, 124, 249)')"> ORGANIZATIONS </button>
+    <button class="tablink" onclick="langName('Help', this, 'rgb(234, 215, 93)')"> CONTACT  </button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <h1>Volunteer</h1>
+    <br>
+    <h2>Generate a Volunteer Position Near me</h2>
+    <br>
+    <button onclick="aggregateVolunteerInfo()" type="button" > Generate</button>
+
+</div>
+
+<div id="Organizations" class="tabcontent">
+    <h1>Organizations</h1>
+    <p>This is  Organizations </p>
+</div>
+
+<div id="Help" class="tabcontent">
+   <h1>Contact</h1>
+   <p></p>
+   <div class="contact-info">
+       <h2>Emails: </h2>
+       <p><span>bsharief@udel.edu <br> tahamou@udel.edu <br> ammarahm@udel.edu <br> kasingh@udel.edu
+       </span></p>
+   </div>
+   <div class="search-bar">
+       <input type="text" id="searchInput" placeholder="Search for help...">
+       <button onclick="performSearch()">Search</button>
+   </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
